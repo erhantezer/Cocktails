@@ -17,20 +17,23 @@ export const AppProvider = ({ children }) => {
     const fetchDrinks = useCallback( async () => {
         setLoading(true)
         try {
-            
+            const response = await fetch(`${url}${search}`);
+            const data = await response.json();
+            console.log(data.drinks)
+            setCocktails(data.drinks)
         } catch (error) {
             console.log(error);
             setLoading(false)
         }
-    }, [second]);
+    }, [search]);
 
     useEffect(() => {
         fetchDrinks();
-    },[])
+    },[search,fetchDrinks])
 
 
     return (
-        <AppContext.Provider value={{}}>
+        <AppContext.Provider value={{ loading, cocktails, search, setSearch }}>
             {children}
         </AppContext.Provider>
     )
