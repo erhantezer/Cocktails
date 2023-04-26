@@ -5,6 +5,7 @@ import NotFound from "../components/NotFound";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import SingleCocktail from "../pages/SingleCocktail";
+import Contact from "../pages/Contact";
 
 
 export const router = createBrowserRouter([
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
             {
                 path:"about",
                 element: <About/>
+            },
+            {
+                path:"contact",
+                element: <Contact/>
             },
             {
                 path:"cocktail/:id",
