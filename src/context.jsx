@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useState } from "react";
 
 const AppContext = createContext();
 
@@ -22,7 +22,11 @@ export const AppProvider = ({ children }) => {
             console.log(error);
             setLoading(false)
         }
-    }, [second])
+    }, [second]);
+
+    useEffect(() => {
+        fetchDrinks();
+    },[])
 
 
     return (
