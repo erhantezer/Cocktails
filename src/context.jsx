@@ -40,6 +40,7 @@ export const AppProvider = ({ children }) => {
                     }
                 })
                 setCocktails(newCocktails)
+                console.log(newCocktails)
             } else {
                 setCocktails([])
             }
