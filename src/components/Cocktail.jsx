@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Cocktail = ({ image, name, id, info, glass }) => {
-    console.log(name)
+const Cocktail = ({ idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass }) => {
+    console.log(idDrink)
     return (
-        <div>Cocktail</div>
+        <div>{idDrink}</div>
     )
 }
 
