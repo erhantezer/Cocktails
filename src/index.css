@@ -1,8 +1,4 @@
-/* 
-====== 
-Variables 
-======
-*/
+/*! ====== Variables ====== */
 :root {
     --primaryLightColor: #d4e6a5;
     --primaryColor: #476a2e;
@@ -25,11 +21,7 @@ Variables
     --fullWidth: 1170px;
 }
 
-/* 
-====== 
-Global Styles 
-======
-*/
+/*! ====== Global Styles ======*/
 * {
     margin: 0;
     padding: 0;
@@ -77,11 +69,7 @@ img {
     display: block;
 }
 
-/* 
-====== 
-Buttons 
-======
-*/
+/*! ====== Buttons ====== */
 .btn,
 .btn-white,
 .btn-primary {
@@ -143,11 +131,7 @@ Buttons
     border-color: var(--primaryLightColor);
 }
 
-/* 
-====== 
-Navbar
-======
-*/
+/*! ====== Navbar ======*/
 .navbar {
     background: var(--mainWhite);
     height: 5rem;
@@ -191,11 +175,7 @@ Navbar
     width: 12rem;
 }
 
-/* 
-====== 
-About
-======
-*/
+/*! ====== About ======*/
 .about-section {
     width: var(--smallWidth);
     max-width: var(--maxWidth);
@@ -208,11 +188,7 @@ About
     letter-spacing: 2px;
 }
 
-/* 
-====== 
-Error
-======
-*/
+/*! ====== Error====== */
 .error-page {
     display: flex;
     justify-content: center;
@@ -229,8 +205,7 @@ Error
 
 
 
-
-
+/*! ===== Loading ==== */
 .loader,
 .loader:before,
 .loader:after {
