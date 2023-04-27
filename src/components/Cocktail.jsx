@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Cocktail = () => {
+const Cocktail = ({ image, name, id, info, glass }) => {
+    console.log(name)
     return (
         <div>Cocktail</div>
     )

@@ -18,8 +18,9 @@ export const AppProvider = ({ children }) => {
         try {
             const response = await fetch(`${url}${search}`);
             const data = await response.json();
-            console.log(data.drinks)
+            console.log(data?.drinks)
             setCocktails(data.drinks)
+            setLoading(false)
         } catch (error) {
             console.log(error);
             setLoading(false)
