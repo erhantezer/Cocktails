@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <footer className="footer">
-                <div className="social-icons">
+                {/* <div className="social-icons">
                     <a href="https://twitter.com" rel="noopener noreferrer" target='true'>
                         <i className="fab fa-twitter fa-2x"></i>
                     </a>
@@ -18,7 +18,7 @@ const Footer = () => {
                     <a href="https://github.com" rel="noopener noreferrer" target='true'>
                         <i className="fab fa-github fa-2x"></i>
                     </a>
-                </div>
+                </div> */}
                 <div className="copyright">Created By Erhan TEZER &copy; Copyright {new Date().getFullYear()}</div>
             </footer>
         </>

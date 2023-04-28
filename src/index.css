@@ -462,24 +462,15 @@ Cocktail
 .footer{
     text-align: center;
     background-color:var(--primaryColor);
-    padding: 0.5rem;
+    padding: 0.4rem;
     position: fixed;
     bottom: 0;
     width: 100vw;
     display: inline-block;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
     .footer{
         display: none;
     }
-}
-
-.social-icons i {
-    padding: 0.2rem;
-}
-
-.social-icons i:hover {
-    color: coral;
-    border-radius: 50%;
 }

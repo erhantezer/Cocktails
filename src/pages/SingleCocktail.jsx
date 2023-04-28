@@ -2,12 +2,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom"
 import Loading from "../components/Loading";
+import useError from "../hooks/useError";
+import Error from "./Error";
 
 
 const SingleCocktail = () => {
     const {id} = useParams();
     const [loading, setLoading] = useState(false);
     const [cocktail, setCocktail] =useState(null)
+    const { error, setError } = useError()
 
     const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=';
 
@@ -54,6 +57,7 @@ const SingleCocktail = () => {
             }
         } catch (error) {
             console.log(error)
+            setError(true)
         }
     }
 
@@ -63,6 +67,10 @@ const SingleCocktail = () => {
 
     if (loading) {
         return <Loading />
+    }
+
+    if (error) {
+        return <Error />
     }
 
     if (!cocktail) {
