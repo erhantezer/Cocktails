@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Loading from "../components/Loading";
 
 
@@ -48,6 +48,7 @@ const SingleCocktail = () => {
                     ingredients,
                 }
                 setCocktail(newCocktail)
+                setLoading(false)
             } else {
                 setCocktail(null)
             }
@@ -79,9 +80,7 @@ const SingleCocktail = () => {
 
     return (
         <section className='section cocktail-section'>
-            <Link to='/' className='btn btn-primary'>
-                back home
-            </Link>
+            
             <h2 className='section-title'>{name}</h2>
             <div className='drink'>
                 <img src={image} alt={name}></img>
@@ -107,6 +106,9 @@ const SingleCocktail = () => {
                             return item ? <span key={index}> {item}</span> : null
                         })}
                     </p>
+                    <Link to='/' className='btn btn-primary'>
+                        back home
+                    </Link>
                 </div>
             </div>
         </section>

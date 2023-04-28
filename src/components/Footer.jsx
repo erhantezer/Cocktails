@@ -4,7 +4,7 @@ const Footer = () => {
     
     return (
         <>
-            <footer className="">
+            <footer className="footer">
                 <div className="social-icons">
                     <a href="https://twitter.com" rel="noopener noreferrer" target='true'>
                         <i className="fab fa-twitter fa-2x"></i>
