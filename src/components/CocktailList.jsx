@@ -19,7 +19,6 @@ const CocktailList = () => {
     }
 
 
-
     return (
         <section className='section'>
             <h2 className='section-title'>cocktails</h2>
@@ -33,4 +32,4 @@ const CocktailList = () => {
     )
 }
 
-export default CocktailList
+export default CocktailList;
