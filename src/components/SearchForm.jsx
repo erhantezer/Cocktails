@@ -7,8 +7,6 @@ const SearchForm = () => {
     const {search, setSearch } = useGlobalContext();
     const searchValue = useRef("");
     
-
-
     useEffect(() => {
         searchValue.current.focus();
     }, []);
