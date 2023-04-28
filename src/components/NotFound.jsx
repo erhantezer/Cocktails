@@ -1,5 +1,4 @@
 
-
 const NotFound = () => {
     return (
         <section className="error-page section">
